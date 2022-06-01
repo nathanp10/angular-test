@@ -1,0 +1,294 @@
+<header class="p-3 blue text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+  
+        
+        <div class="col-lg-auto me-lg-auto d-flex  ">
+          <div class="mr-auto p-2">
+          <i class="fa-solid fa-cubes fa-2xl"></i>
+          </div>
+          <div class="p-2">
+          <p>SharePoint</p>
+          </div>
+        </div>
+  
+        <form class="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-5" role="search">
+          
+          <input type="search" class="form-control form-control-dark text-black bg-white rounded-pill border border-secondary text-center" placeholder="Rechercher sur ce site" aria-label="Search">
+          
+        </form>
+  
+          <div class="col-md-3 d-flex justify-content-between">
+            <button type="button" class="btn btn-light "><i class="fa-solid fa-gear fa-2xl" style="color:rgb(0, 0, 0)"></i></button>
+            <button type="button" class="btn btn-light"><i class="fa-solid fa-question fa-2xl" style="color:rgb(0, 0, 0)"></i></button>
+            <button type="button" class="btn btn-light"> Connexion </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container col-md-12 ">
+    
+    <!-- La légende-->
+    
+    <div class="col-md-12 d-flex">
+        <div class="container">
+          <h1 class="">{{title}} SAGE X3 :</h1>
+          <div class="table-responsive-sm">
+            <table class="table table-hover ">
+              <thead>
+                <caption><h2><u>Légende: </u></h2></caption>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><i class="fa-solid fa-circle-xmark" style="color: #F93535"></i></td>
+                  <td>Version non supportée : Pas de livrables possibles.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><i class="fa-solid fa-circle" style="color: #F5D427"></i></td>
+                  <td>Version maintenue : Correctifs possibles pour anomalies. Livrables possibles.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><i class="fa-solid fa-circle" style="color: #32CB54"></i></td>
+                  <td>Version maintenue et évolutive : Correctifs possibles pour anomalies. Version sur laquelle les évolutions sont réalisées. Livrables possibles.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><i class="fa-solid fa-circle-exclamation" style="color:#F5D427"></i></td>
+                  <td>Version non maintenue par PP : en cas d'anomalies une montée de patch sur une version maintenue sera nécessaire. 
+                    Toute demande patch doit être chiffrée par PP (installation désynchronisée donc pas de Superpatch possible.)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Séparation entre la légende et les bouton-->
+        <div class="col-md-4"></div>
+        <!-- Les boutons a coter de la legende-->
+        <div class="row col-md-3 ">
+          <div class=" d-grid gap-8  p-5">
+            <a type="button" class="btn btn-secondary"> <i class="fa-solid fa-industry"></i> Addons Sage X3 </a>
+            <a routerLink="http://127.0.0.1:5500/src/app/link/link.component.html" type="button" class="btn btn-light text-black" ><i class="fa-solid fa-atom" style="color:rgb(0, 140, 255)"></i> 4CAD Link 2.0 </a>
+            <a href="tools/tools.component.html" type="button" class="btn btn-light text-black" ><i class="fa-solid fa-briefcase" style="color:rgb(0, 140, 255)"></i>  FCAD Tools  </a>
+            <a href="ged/ged.component.html" type="button" class="btn btn-light text-black" ><i class="fa-solid fa-folder-open" style="color:rgb(0, 140, 255)"></i> 4CAD GED  </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="table-responsive-sm ">
+      <table class="table table-hover table-striped text-center width-60">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">code activité</th>
+            <th scope="col">nom add on</th>
+            <th scope="col">version commerciale</th>
+            <th scope="col">remarque</th>
+            <th scope="col">brique aero</th>
+            <th scope="col">brique mro</th>
+            <th scope="col">v 6</th>
+            <th scope="col">v 7</th>
+            <th scope="col">pu9</th>
+            <th scope="col">v11.inférieure à v11.18</th>
+            <th scope="col">v11.18</th>
+            <th scope="col">v11.20</th>
+            <th scope="col">v12 inférieure à v12.28</th>
+            <th scope="col">v12.28</th>
+            <th scope="col">v12.29</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td><i class="fa-solid fa-circle" style="color: #F5D427"></i></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>XX1J</td>
+            <td>4CAD Master</td>
+            <td>N/A</td>
+            <td>Add-on technique de base</td>
+            <td>Inclus</td>
+            <td>Inclus</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">code activité</th>
+            <th scope="col">nom add on</th>
+            <th scope="col">version commerciale</th>
+            <th scope="col">remarque</th>
+            <th scope="col">brique aero</th>
+            <th scope="col">brique mro</th>
+            <th scope="col">v 6</th>
+            <th scope="col">v 7</th>
+            <th scope="col">pu9</th>
+            <th scope="col">v11.inférieure à v11.18</th>
+            <th scope="col">v11.18</th>
+            <th scope="col">v11.20</th>
+            <th scope="col">v12 inférieure à v12.28</th>
+            <th scope="col">v12.28</th>
+            <th scope="col">v12.29</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  
