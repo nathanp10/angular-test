@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <div class="table-responsive-sm ">
+    <table class="table table-hover table-striped text-center ">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date de l'ajout</th>
+          <th scope="col">Code Activité</th>
+          <th scope="col">Nom AddOn</th>
+          <th scope="col">Version Commerciale</th>
+          <th scope="col">Remarque AddOn</th>
+          <th scope="col">Brique AERO</th>
+          <th scope="col">Brique MRO</th>
+          <ng-container *ngFor="let item of ItemsTableauLink[0].versions[0].compatibleVersions">
+            <th scope="col">{{item.label}}</th>
+          </ng-container>
+          <th scope="col"><button type="button" class="btn-lg btn-primary">Ajouter colone</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let items of ItemsTableauLink">
+          <tr>
+            <td   [attr.rowspan]="items.versions.length ">{{items.number}}</td>
+            <td  [attr.rowspan]="items.versions.length ">{{items.Date | date:"dd/MM/yyyy"}}</td>
+            <td [attr.rowspan]="items.versions.length ">{{items.codeActivite}}</td>
+            <td  [attr.rowspan]="items.versions.length ">{{items.nomAddOn}}</td>
+            <td >{{items.versions[0].softwareVersion}}</td>
+            <td >{{items.versions[0].remarque}}</td>
+            <td >{{items.versions[0].BriqueAERO}}</td>
+            <td >{{items.versions[0].BriqueMRO}}</td>
+            <ng-container *ngFor="let compatibleVersion of items.versions[0].compatibleVersions">
+              <td class="text-center">{{compatibleVersion.value}}</td>
+            </ng-container>
+          </tr>
+          <ng-container *ngFor="let version of items.versions | slice:1; let i = index;">
+            <tr>
+              <td>{{version.softwareVersion}}</td>
+              <td>{{version.remarque}}</td>
+              <td>{{version.BriqueAERO}}</td>
+              <td>{{version.BriqueMRO}}</td>
+              <ng-container *ngFor="let compatibleVersion of version.compatibleVersions">
+                <td style="text-align: center;">{{compatibleVersion.value}}</td>
+              </ng-container>
+          </tr>
+          </ng-container>
+        </ng-container>
+        
+     </tbody>
+     <tfoot>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date de l'ajout</th>
+        <th scope="col">code activité</th>
+        <th scope="col">nom AddOn</th>
+        <th scope="col">version commerciale</th>
+        <th scope="col">remarque</th>
+        <th scope="col">brique AERO</th>
+        <th scope="col">brique MRO</th>
+        <ng-container *ngFor="let item of ItemsTableauLink[0].versions[0].compatibleVersions">
+          <th scope="col">{{item.label}}</th>
+        </ng-container>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="d-flex p-2">
+    <a  type="button" class="btn-lg btn-primary " [routerLink]="['/AjoutLigneLink']"> Ajoutez une ligne  </a>
+    <button type="button" class="btn-lg btn-danger">Supprimer la dernière ligne</button>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { Pokemon } from './pokemon-stat';
 })
 export class AppComponent implements OnInit {
   [x: string]: any;
+  title='coucou'
   
   pokemons: Pokemon[] =POKEMONS;
   pokemonSelected: Pokemon|undefined;

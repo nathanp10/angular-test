@@ -1,0 +1,33 @@
+<div class="container col-md-4">
+    <form class="example-form form-inline justify-content-center  border border-dark ">
+      <h2 class="text-center">Entrez vos données pour ajoutez l'AddOn</h2>
+  
+      
+  
+      <form #gfgform = "ngForm">
+        <ng-container *ngFor="let input of inputs">
+          {{input.value}}
+         <input type="text"  ngModel>
+        </ng-container>
+      </form>
+  
+      <div class="select example-full-width">
+      <mat-form-field  appearance="fill">
+        <ng-container *ngFor="let select of selects">
+        <mat-label>{{select.value}}</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let comete of cometes" [value]="comete.value">
+            {{comete.viewValue}}
+          </mat-option>
+        </mat-select>
+      </ng-container>
+      </mat-form-field>
+    </div>
+  
+    <div class="d-md-flex justify-content-md-center">
+      <a type="button" class="btn-lg btn-outline-light" [routerLink]="['/GED']"> Appliquer </a>
+    </div>
+      
+    </form>
+  </div>
+  

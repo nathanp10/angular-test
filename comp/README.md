@@ -1,27 +1,32 @@
-# Comp
+![Logo 4CAD](https://media-exp1.licdn.com/dms/image/C4D0BAQFpOZxPqZWAHg/company-logo_200_200/0/1593176518381?e=2147483647&v=beta&t=xZVUx5w_ohEjW-emfARUaF2tngIsvQj44z1KKvh_lFc)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#  **Explication des fichiers**
 
-## Code scaffolding
+##  Array-compatibilite (Sage), Link, Tool,Ged :
+| <span style="color: #F83737"> Sage </span>                                                               | <span style="color: #F83737"> Link                                                                          | <span style="color: #F83737"> Tools                                                                          | <span style="color: #F83737"> Ged                                                                          |   |   |   |   |   |   |
+|:----------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Les informations correspondant aux AddOn de Sage son dans le tableau . | Les informations correspondant aux AddOn de Link ne son pas dans le tableau . | Les informations correspondant aux AddOn de Tools ne son pas dans le tableau . | Les informations correspondant aux AddOn de Ged ne son pas dans le tableau . |   |   |   |   |   |   |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Les données entrer son écrit en brut et non stocker en BDD
 
-## Build
+## Les boutons-nav :
+Ce dossier correspond aux bouton pour naviguer entre chaque page donc de Sage, Link, Tools et Ged. Les routes pour naviguer ont été effectuer.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Légende :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Pour comprendre le tableau il y a les fichier legende avec chaque explication de pastille de couleur.
 
-## Running end-to-end tests
+> Pour ajoutez des lignes il faut appuyer sur le bouton ajoutez et remplir les information de la nouvelle AddOn. Les formulaires ont été fait avec angular matérial.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Le corp de la page :
+app.component contient tout le corp de la page avec des appels aux fichiers correspondant au besoins de l'utilisateur.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Le CSS a été fait avec bootstrap.
+
+## Module
+
+Il y a tout les modules necessaires pour faire fonctionner les pages et il y a toutes les configurations des routes pour naviguer entre chaque pages.

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinkComponent implements OnInit {
 
+  title = 'Compatibilité';
+
+
   constructor() { }
 
   ngOnInit(): void {
